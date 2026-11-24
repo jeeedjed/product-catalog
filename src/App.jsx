@@ -14,7 +14,10 @@ function App() {
 
   return (
     <div className="app">
-      <h1>CvSU Mini Store</h1>
+      <div className="header">
+        <h1>CvSU Mini Store</h1>
+        <p>Your one-stop shop for school essentials</p>
+      </div>
 
       <p className="cart-message">
         {count === 0
