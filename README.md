@@ -1,24 +1,21 @@
-# CvSU Mini Store
-
-lab Exercise 3 - React Props and Component Communication
-
+Lab Exercise 4 - React useState and useEffect
 Guide Questions
-1. What is the difference between props and state?
+1. Why do we use two separate states, searchText and debouncedSearch, instead of only one?
 
--props are data from the parent and cannot be changed by the child. State is data inside a component that can be change.
+-searchText changes on every key I type, whlie debouncedSearch only changes after I stop typing so the list does not filter on every key.
 
-2. Why can a child component not modify the props it receives?
+2. What would happen if the debounce effect did not return a cleanup function?
 
--because the props belong to the parent and only the parent can change them.
+-the old timers will not be cancelled.\, so possible that the debounce will not work.
 
-3. How does the onAddToCart callback allow data to flow from child to parent even though props only flow downward?
+3. What is the purpose of the dependency array? What happens if it is empty ([])? What happens if it is left out completely?
 
--the parent gives a function to the child then child calls it and sends the product title, so the parent gets the data.
+-it tells tothe react when to run the effect again. If its empty, the effect runs only once. If its left out, it runs after every render.
 
-4. Why is the key prop required when rendering a list with .map()? What could happen if it is missing or duplicated?
+4. Why should we avoid sorting the original products array directly?
 
--the key helps react know which item. If it is missing or duplicated, react show a warning or update in the wrong item.
+-because the sort changes the array itself, so i just sort a copy instead.
 
-5. What does the children prop allow you to do that a normal prop does not?
+5. Is the filtered product list better stored in its own state, or calculated from existing state during rendering? Explain your choice.
 
--it lets me put content inside the component tags, like the New and Sale badges.
+-it is better to calculate it during the rendering because it can be made from the existing state, so it doesnt need for another state.
