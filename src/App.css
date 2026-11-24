@@ -1,0 +1,6 @@
+.app { max-width: 1000px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; }
+h1 { text-align: center; color: #1b5e20; }
+.cart-message { text-align: center; background: #e8f5e9; padding: 10px; border-radius: 8px; font-weight: bold; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin-top: 20px; }
+.badge { background: #ff9800; color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.badge.sale { background: #e53935; }

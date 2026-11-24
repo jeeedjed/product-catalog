@@ -1,0 +1,8 @@
+.card { border: 1px solid #ccc; border-radius: 10px; padding: 16px; background: white; text-align: center; }
+.card.out-of-stock { opacity: 0.45; filter: grayscale(100%); }
+.category { color: gray; font-size: 14px; }
+.price { font-size: 20px; font-weight: bold; }
+.label.in { color: green; font-weight: bold; }
+.label.out { color: red; font-weight: bold; }
+button { margin-top: 10px; padding: 8px 16px; background: #1b5e20; color: white; border: none; border-radius: 6px; cursor: pointer; }
+button:disabled { background: #aaa; cursor: not-allowed; }
